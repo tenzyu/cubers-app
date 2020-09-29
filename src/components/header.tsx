@@ -1,8 +1,9 @@
 import React from "react";
 import styled from "styled-components";
 
+import { Link } from "react-router-dom";
+
 const Wrapper = styled.header`
-  align-items: center;
   background-color: rgba(246, 246, 246, 0.9);
   border-bottom: 1px solid #ccc;
   display: flex;
@@ -12,21 +13,66 @@ const Wrapper = styled.header`
   position: sticky;
   top: 0;
   z-index: var(--z-fixed);
+  -webkit-box-align: center;
+  align-items: center;
+`;
+
+const Left = styled.div`
+  flex: 1 0 0%;
+  -webkit-box-align: center;
+  align-items: center;
+`;
+
+const Right = styled.nav`
+  flex: 1 0 0%;
+  -webkit-box-align: center;
+  align-items: center;
 `;
 
 const Logo = styled.h1`
   color: var(--text-color-light);
   font-family: "arial black", "Helvetica Neue", sans-serif;
-  font-size: var(--h1-font-size);
+  font-size: var(--h2-font-size);
   margin-left: 5%;
+`;
+
+const Nav = styled.ul`
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: end;
+  justify-content: flex-end;
+`;
+
+const Anchor = styled.li`
+  color: var(--text-color-light);
+  font-family: "arial black", "Helvetica Neue", sans-serif;
+  font-size: var(--small-font-size);
+  margin-right: 5%;
 `;
 
 export const Header = () => {
   return (
     <Wrapper role="banner">
-      <Logo>
-        <a href="/">cubers.app</a>
-      </Logo>
+      <Left>
+        <Logo>
+          <Link to="/">cubers.app</Link>
+        </Logo>
+      </Left>
+
+      <Right>
+        <Nav>
+          <Anchor>
+            <Link to="/about">About</Link>
+          </Anchor>
+          <Anchor>
+            <Link to="/about">About</Link>
+          </Anchor>
+          <Anchor>
+            <Link to="/about">About</Link>
+          </Anchor>
+        </Nav>
+      </Right>
     </Wrapper>
   );
 };
