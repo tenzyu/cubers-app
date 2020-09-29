@@ -49,6 +49,9 @@ const Anchor = styled.li`
   font-family: "arial black", "Helvetica Neue", sans-serif;
   font-size: var(--small-font-size);
   margin-right: 5%;
+  &:not(:last-child) {
+    margin-right: var(--mb-3);
+  }
 `;
 
 export const Header = () => {
@@ -63,10 +66,10 @@ export const Header = () => {
       <Right>
         <Nav>
           <Anchor>
-            <Link to="/about">About</Link>
+            <Link to="/3x3">3x3</Link>
           </Anchor>
           <Anchor>
-            <Link to="/about">About</Link>
+            <Link to="/2x2">2x2</Link>
           </Anchor>
           <Anchor>
             <Link to="/about">About</Link>

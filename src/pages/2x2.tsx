@@ -7,14 +7,14 @@ const Title = styled.p`
   font-size: var(--h1-font-size);
 `;
 
-class About extends React.Component {
+class TutorialTwo extends React.Component {
   render() {
     return (
       <IndexLayout>
-        <Title>Cubers App</Title>
+        <Title>2x2の解き方</Title>
       </IndexLayout>
     );
   }
 }
 
-export default About;
+export default TutorialTwo;
