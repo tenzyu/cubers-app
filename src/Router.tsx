@@ -17,9 +17,9 @@ export default class Router extends React.Component {
       <HashRouter>
         <Switch>
           <Route exact path="/" component={Index} />
-          <Route path="/3x3" component={TutorialThree} />
-          <Route path="/2x2" component={TutorialTwo} />
-          <Route path="/about" component={About} />
+          <Route exact path="/3x3" component={TutorialThree} />
+          <Route exact path="/2x2" component={TutorialTwo} />
+          <Route exact path="/about" component={About} />
           <Route component={NotFound} />
         </Switch>
       </HashRouter>
