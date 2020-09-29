@@ -31,7 +31,7 @@ const Right = styled.nav`
 
 const Logo = styled.h1`
   color: var(--text-color-light);
-  font-family: "arial black", "Helvetica Neue", sans-serif;
+  font-family: "rubik", "arial black", "Helvetica Neue", sans-serif;
   font-size: var(--h2-font-size);
   margin-left: 5%;
 `;
