@@ -13,6 +13,10 @@ const Title = styled.p`
   margin-bottom: var(--mb-2);
 `;
 
+const SubTitle = styled.p`
+  font-size: var(--smaller-font-size);
+`;
+
 const Description = styled.p`
   font-size: var(--h2-font-size);
   margin-bottom: var(--mb-4);
@@ -28,9 +32,12 @@ class NotFound extends React.Component {
     return (
       <IndexLayout>
         <Center>
-          <Title>404: Page Not Found</Title>
-          <Description>You&apos;ve hit the void.</Description>
-          <StyledLink to="/">back to top page</StyledLink>
+          <Title>404 Not Found</Title>
+          <SubTitle>
+            <s>なぞのばしょ</s>
+          </SubTitle>
+          <Description>ファイルが存在しません</Description>
+          <StyledLink to="/">HOME</StyledLink>
         </Center>
       </IndexLayout>
     );
