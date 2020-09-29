@@ -1,8 +1,7 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
-  "icons": [
-    {
+  "name": "cubers.app",
+  "short_name": "Cubers",
+  "icons": [{
       "src": "favicon.ico",
       "sizes": "64x64 32x32 24x24 16x16",
       "type": "image/x-icon"
@@ -18,8 +17,14 @@
       "sizes": "512x512"
     }
   ],
-  "start_url": ".",
+  "start_url": "/",
   "display": "standalone",
-  "theme_color": "#000000",
-  "background_color": "#ffffff"
+  "orientation": "portrait",
+  "background_color": "#ffffff",
+  "theme_color": "#14213D",
+  "description": "bageleeのPWAです。",
+  "dir": "ltr",
+  "lang": "ja-jp",
+  "related_applications": [],
+  "prefer_related_applications": false
 }
