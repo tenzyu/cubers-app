@@ -16,7 +16,8 @@ const Wrapper = styled.header`
 
 const Logo = styled.h1`
   color: var(--text-color-light);
-  font-family: "arial black", "Helvetica Neue", sans-serif;
+  font-family: "rubik", "arial black", "Helvetica Neue", sans-serif;
+  font-weight: 900;
   font-size: var(--h1-font-size);
   margin-left: 5%;
 `;

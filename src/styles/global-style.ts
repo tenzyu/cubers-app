@@ -7,7 +7,7 @@ export const GlobalStyle = createGlobalStyle`
     --bg-color: #f6f6f6;
     --bg-color-dark: #e5e5e5;
 
-    --body-font: "Helvetica Neue", "Arial", "Hiragino Kaku Gothic ProN", "Hiragino Sans", "sans-serif";
+    --body-font: "rubik", "Helvetica Neue", "Arial", "Hiragino Kaku Gothic ProN", "Hiragino Sans", "sans-serif";
 
     --border-color: #ccc;
 
