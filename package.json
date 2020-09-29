@@ -47,10 +47,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/tenzyu/cubers.app"
+    "url": "https://github.com/tenzyu/cubers-app"
   },
   "bugs": {
-    "url": "https://github.com/tenzyu/cubers.app/issues"
+    "url": "https://github.com/tenzyu/cubers-app/issues"
   },
   "homepage": "https://canary.cubers.app"
 }
