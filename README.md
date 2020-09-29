@@ -1,6 +1,6 @@
 # Memo
 
-## How to Start
+## How to start
 
 1. `yarn install`
 
