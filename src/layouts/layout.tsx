@@ -1,31 +1,14 @@
 import React from "react";
-import styled from "styled-components";
+import styles from "./layout.module.css";
 
 import { Header } from "components/header";
 import { Footer } from "components/footer";
-import { GlobalStyle } from "styles/global-style";
+import "styles/global-style.module.css";
 
-const Wrapper = styled.div``;
-
-const Content = styled.main`
-  box-sizing: border-box;
-  margin: auto;
-  padding: 0 16px;
-
-  @media screen and (min-width: 600px) {
-    width: 600px;
-  }
-`;
-
-export const IndexLayout: React.FC = ({ children }) => {
-  return (
-    <>
-      <GlobalStyle />
-      <Wrapper>
-        <Header />
-        <Content>{children}</Content>
-        <Footer />
-      </Wrapper>
-    </>
-  );
-};
+export const IndexLayout: React.FC = ({ children }) => (
+  <div className={styles.wrapper}>
+    <Header />
+    <main className={styles.content}> {children} </main>
+    <Footer />
+  </div>
+);
