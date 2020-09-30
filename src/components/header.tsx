@@ -1,8 +1,7 @@
 import React from "react";
-import styles from "./header.module.css";
+import styles from "styles/header.module.css";
 
 import { Link } from "react-router-dom";
-
 
 export const Header = () => (
   <header className={styles.header} role="banner">
@@ -14,11 +13,11 @@ export const Header = () => (
 
     <nav className={styles.right}>
       <ul className={styles.ul}>
-        { ["3x3", "2x2", "About"].map(
-          name => <li className={styles.li}>
+        {["3x3", "2x2", "About"].map((name) => (
+          <li className={styles.li}>
             <Link to={`/${name.toLowerCase()}`}> {name} </Link>
           </li>
-        ) }
+        ))}
       </ul>
     </nav>
   </header>
