@@ -20,7 +20,7 @@ jobs:
           node-version: '12.x'
       
       - name: Build
-      - run: |
+        run: |
               yarn install
               yarn react-scripts build
 
