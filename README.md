@@ -10,4 +10,6 @@
 
 - The master branch is always deployed to `https://cubers.app` so we must maintain a stable.
 
-- Pull requests are always deployed to `https://--devloy-preview{n}--canary-cubers-app.netlify.app` so we can preview it on Netlify.
+- Pull requests are always deployed to `https://devloy-preview-{n}--canary-cubers-app.netlify.app` so we can preview it on Netlify.
+
+> [Go to cubers.app](https://cubers.app)
