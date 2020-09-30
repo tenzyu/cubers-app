@@ -1,4 +1,4 @@
-name: deploy gh-pages
+name: Release GitHub Pages - canary
 
 on:
   push:
@@ -7,7 +7,7 @@ on:
     branches: [ master ]
 
 jobs:
-  deploy:
+  Scripts:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
@@ -16,13 +16,15 @@ jobs:
         uses: actions/setup-node@v2.1.0
         with:
           node-version: '12.x'
-
-      - run: yarn install
-
-      - run: yarn build
+      
+      - name: Build
+      - run: |
+              yarn install
+              yarn react-scripts build
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_branch: gh-pages
           cname: canary.cubers.app
