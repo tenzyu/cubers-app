@@ -1,17 +1,13 @@
 import React from "react";
 import { IndexLayout } from "layouts/layout";
-import styled from "styled-components";
 
-const Title = styled.p`
-  text-align: center;
-  font-size: var(--h1-font-size);
-`;
+import styles from "styles/article.module.css";
 
 class About extends React.Component {
   render() {
     return (
       <IndexLayout>
-        <Title>Cubers App</Title>
+        <p className={styles.Title}>Cubers App</p>
       </IndexLayout>
     );
   }
