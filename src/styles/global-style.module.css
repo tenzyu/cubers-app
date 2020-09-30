@@ -50,6 +50,7 @@ body {
   font-family: var(--body-font);
   font-size: var(--normal-font-size);
   font-weight: var(--font-medium);
+  margin: 0;
 }
 
 h2, h3, h4 {
