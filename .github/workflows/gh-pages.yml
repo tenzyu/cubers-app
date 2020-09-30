@@ -1,4 +1,6 @@
-name: Release GitHub Pages - canary
+# canary.cubers.app
+
+name: Release GitHub Pages
 
 on:
   push:
