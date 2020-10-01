@@ -7,7 +7,7 @@ type ArticleProps = {
   description: string;
 };
 
-export const Heading: React.FC<ArticleProps> = (props, { children }) => {
+export const Heading: React.FC<ArticleProps> = (props) => {
   return (
     <div className={styles.wrapper}>
       <p className={styles.title}>{props.title}</p>
