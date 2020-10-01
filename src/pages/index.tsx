@@ -1,14 +1,16 @@
 import React from "react";
-import { IndexLayout } from "layouts/layout";
+import { SingleLayout } from "layouts/singleLayout";
 
-import styles from "styles/article.module.css";
+import { Article } from "components/article";
 
 class Index extends React.Component {
   render() {
     return (
-      <IndexLayout>
-        <p className={styles.Title}>こんにちは</p>
-      </IndexLayout>
+      <SingleLayout>
+        <Article title="HOME PAGE">
+          <p>Coming soon...</p>
+        </Article>
+      </SingleLayout>
     );
   }
 }
