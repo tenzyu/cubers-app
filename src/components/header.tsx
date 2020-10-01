@@ -4,7 +4,7 @@ import styles from "styles/header.module.css";
 import { Link } from "react-router-dom";
 
 export const Header = () => (
-  <header className={styles.header} role="banner">
+  <header role="banner">
     <h1>
       <Link to="/">cubers.app</Link>
     </h1>
