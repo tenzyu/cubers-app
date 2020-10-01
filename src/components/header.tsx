@@ -8,12 +8,14 @@ export const Header = () => (
     <h1>
       <Link to="/">cubers.app</Link>
     </h1>
-    <ul className={styles.navlinks}>
-      {["3x3", "2x2", "About"].map((name) => (
-        <li>
-          <Link to={`/${name.toLowerCase()}`}> {name} </Link>
-        </li>
-      ))}
-    </ul>
+    <nav>
+      <ul className={styles.navlinks}>
+        {["3x3", "2x2", "About"].map((name) => (
+          <li>
+            <Link to={`/${name.toLowerCase()}`}> {name} </Link>
+          </li>
+        ))}
+      </ul>
+    </nav>
   </header>
 );
