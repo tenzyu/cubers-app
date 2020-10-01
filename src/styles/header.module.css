@@ -1,34 +1,33 @@
 .header {
-  background-color: rgba(246, 246, 246, 0.9);
+  align-items: center;
+  background-color: rgba(246, 246, 246, .9);
   border-bottom: 1px solid #ccc;
+  -webkit-box-align: center;
   display: flex;
   height: 64px;
   left: 0;
-  margin-bottom: var(--mb-4);
   position: sticky;
   top: 0;
   z-index: var(--z-fixed);
-  -webkit-box-align: center;
-  align-items: center;
 }
 
 .left {
-  flex: 1 0 0%;
-  -webkit-box-align: center;
   align-items: center;
+  -webkit-box-align: center;
+  flex: 1 0 0;
 }
 
 .right {
-  flex: 1 0 0%;
-  -webkit-box-align: center;
   align-items: center;
+  -webkit-box-align: center;
+  flex: 1 0 0;
 }
 
 .ul {
-  display: flex;
-  -webkit-box-align: center;
   align-items: center;
+  -webkit-box-align: center;
   -webkit-box-pack: end;
+  display: flex;
   justify-content: flex-end;
 }
 

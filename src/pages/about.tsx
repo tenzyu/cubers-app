@@ -1,13 +1,14 @@
 import React from "react";
 import { IndexLayout } from "layouts/layout";
 
-import styles from "styles/article.module.css";
+import { Heading, Article } from "components/article";
 
 class About extends React.Component {
   render() {
     return (
       <IndexLayout>
-        <p className={styles.Title}>Cubers App</p>
+        <Heading title="Cubers App" subtitle="" description="" />
+        <Article>Lorem ipsum dolor sit.</Article>
       </IndexLayout>
     );
   }

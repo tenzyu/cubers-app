@@ -1,22 +1,23 @@
 import React from "react";
 
+import styles from "styles/article.module.css";
 import { IndexLayout } from "layouts/layout";
 import { Link } from "react-router-dom";
 
-import styles from "styles/notFound.module.css";
+import { Heading } from "components/article";
 
 class NotFound extends React.Component {
   render() {
     return (
       <IndexLayout>
-        <div className={styles.Center}>
-          <p className={styles.Title}>404 Not Found</p>
-          <p className={styles.SubTitle}>
-            <s>なぞのばしょ</s>
-          </p>
-          <p className={styles.Description}>ファイルが存在しません</p>
-          <Link className={styles.Link} to="/">
-            HOME
+        <Heading
+          title="404 Not Found"
+          subtitle="なぞのばしょ"
+          description="ファイルが存在しません"
+        />
+        <div className={styles.center}>
+          <Link to="/">
+            <h2>HOME</h2>
           </Link>
         </div>
       </IndexLayout>
