@@ -1,12 +1,12 @@
 import React from "react";
-import { IndexLayout } from "layouts/layout";
+import { SingleLayout } from "layouts/singleLayout";
 
 import { Article } from "components/article";
 
 class TutorialThree extends React.Component {
   render() {
     return (
-      <IndexLayout>
+      <SingleLayout>
         <Article
           title="3x3 TUTORIAL"
           subtitle="Learn how to solve a Rubik's Cube"
@@ -39,7 +39,7 @@ class TutorialThree extends React.Component {
             beatae eaque facere?
           </p>
         </Article>
-      </IndexLayout>
+      </SingleLayout>
     );
   }
 }

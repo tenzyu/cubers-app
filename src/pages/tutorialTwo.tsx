@@ -1,5 +1,5 @@
 import React from "react";
-import { ArticleLayout } from "layouts/article";
+import { ArticleLayout } from "layouts/articleLayout";
 
 import { Article } from "components/article";
 

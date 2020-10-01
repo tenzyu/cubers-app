@@ -1,7 +1,7 @@
 import React from "react";
 
 import styles from "styles/article.module.css";
-import { IndexLayout } from "layouts/layout";
+import { SingleLayout } from "layouts/singleLayout";
 import { Link } from "react-router-dom";
 
 import { Article } from "components/article";
@@ -9,7 +9,7 @@ import { Article } from "components/article";
 class NotFound extends React.Component {
   render() {
     return (
-      <IndexLayout>
+      <SingleLayout>
         <Article
           title="404 Not Found"
           subtitle="なぞのばしょ"
@@ -21,7 +21,7 @@ class NotFound extends React.Component {
             </Link>
           </div>
         </Article>
-      </IndexLayout>
+      </SingleLayout>
     );
   }
 }

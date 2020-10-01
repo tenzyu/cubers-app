@@ -5,7 +5,7 @@ import { Header } from "components/header";
 import { Footer } from "components/footer";
 import "styles/globalStyle.module.css";
 
-export const IndexLayout: React.FC = ({ children }) => (
+export const SingleLayout: React.FC = ({ children }) => (
   <div className="wrapper">
     <Header />
     <main className={styles.content}>{children}</main>
