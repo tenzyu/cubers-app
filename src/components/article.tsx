@@ -3,24 +3,21 @@ import styles from "styles/article.module.css";
 
 type ArticleProps = {
   title: string;
-  subtitle: string;
-  description: string;
+  subtitle?: string;
+  description?: string;
+  children?: unknown;
 };
 
-export const Heading: React.FC<ArticleProps> = (props) => {
+export const Article: React.FC<ArticleProps> = (props) => {
   return (
-    <div className={styles.wrapper}>
-      <p className={styles.title}>{props.title}</p>
-      <p className={styles.subtitle}>{props.subtitle}</p>
-      <p className={styles.description}>{props.description}</p>
-    </div>
-  );
-};
-
-export const Article: React.FC = ({ children }) => {
-  return (
-    <div>
-      <article>{children}</article>
-    </div>
+    <article className={styles.articleWrapper}>
+      <section>
+        <h1 className={styles.title}>{props.title}</h1>
+        <p>{props.subtitle}</p>
+        <p className={styles.description}>{props.description}</p>
+        <hr className={styles.border} />
+        <div className={styles.children}>{props.children}</div>
+      </section>
+    </article>
   );
 };

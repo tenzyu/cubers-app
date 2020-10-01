@@ -1,14 +1,15 @@
 import React from "react";
 import { IndexLayout } from "layouts/layout";
 
-import { Heading, Article } from "components/article";
+import { Article } from "components/article";
 
 class About extends React.Component {
   render() {
     return (
       <IndexLayout>
-        <Heading title="Cubers App" subtitle="" description="" />
-        <Article>Lorem ipsum dolor sit.</Article>
+        <Article title="Cubers App" description="about page">
+          <p>Todo: マークダウンで入稿できるようにする</p>
+        </Article>
       </IndexLayout>
     );
   }
