@@ -3,7 +3,7 @@ import React from "react";
 import { IndexLayout } from "layouts/layout";
 import { Link } from "react-router-dom";
 
-import styles from "styles/notfound.module.css";
+import styles from "styles/notFound.module.css";
 
 class NotFound extends React.Component {
   render() {
