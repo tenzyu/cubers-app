@@ -2,7 +2,7 @@ import React from "react";
 import styles from "styles/footer.module.css";
 
 export const Footer = () => (
-  <footer className={styles.footer} role="contentinfo">
+  <footer role="contentinfo">
     <p className={styles.copyright}>© 2020 Tenzyu Masuda</p>
   </footer>
 );
