@@ -6,9 +6,9 @@ import { Footer } from "components/footer";
 import "styles/globalStyle.module.css";
 
 export const IndexLayout: React.FC = ({ children }) => (
-  <div className={styles.wrapper}>
+  <div className="wrapper">
     <Header />
-    <main className={styles.content}> {children} </main>
+    <main className={styles.content}>{children}</main>
     <Footer />
   </div>
 );
