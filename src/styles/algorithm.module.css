@@ -1,0 +1,23 @@
+.wrapper {
+  background-color: white;
+  border-radius: 6px;
+  font-family: "Courier";
+  padding: 1rem;
+}
+
+.algorithm {
+  color: var(--text-color-light);
+  font-size: 1.45rem;
+  font-weight: var(--font-sharp);
+}
+
+@media screen and (min-width:768px) {
+  .wrapper {
+    margin: auto;
+    max-width: 90%;
+  }
+
+  .algorithm {
+    font-size: 2rem;
+  }
+}
