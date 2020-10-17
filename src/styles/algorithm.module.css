@@ -9,6 +9,7 @@
   color: var(--text-color-light);
   font-size: 1.45rem;
   font-weight: var(--font-sharp);
+  text-align: center;
 }
 
 @media screen and (min-width:768px) {

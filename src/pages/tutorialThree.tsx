@@ -1,22 +1,25 @@
-import React from "react";
-import { SingleLayout } from "layouts/singleLayout";
+import React, { lazy, Suspense } from "react";
+import { ArticleLayout } from "layouts/articleLayout";
 
+import { importMDX } from 'mdx.macro';
 import { Article } from "components/article";
-import { Alg } from "components/algrithm";
+
+const Content = lazy(() => importMDX('../contents/tutorialThree/tutorialThree.mdx'))
 
 class TutorialThree extends React.Component {
   render() {
     return (
-      <SingleLayout>
+      <ArticleLayout>
         <Article
           title="3x3 TUTORIAL"
           subtitle="Learn how to solve a Rubik's Cube"
           description="An Easy Tutorial"
         >
-          <p>Lorem, ipsum dolor.</p>
-          <Alg memo="Tperm">R U R' U' R' F R2 U' R' U' R U R' F'</Alg>
         </Article>
-      </SingleLayout>
+        <Suspense fallback={<div>Loading...</div>}>
+          <Content />
+        </Suspense>
+      </ArticleLayout>
     );
   }
 }

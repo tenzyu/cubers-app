@@ -4,13 +4,13 @@ import { SingleLayout } from "layouts/singleLayout";
 import { importMDX } from 'mdx.macro';
 import { Article } from "components/article";
 
-const Content = lazy(() => importMDX('../contents/about/about.mdx'))
+const Content = lazy(() => importMDX('../contents/credits/credits.mdx'))
 
-class About extends React.Component {
+class Credits extends React.Component {
   render() {
     return (
       <SingleLayout>
-        <Article title="Cubers App" description="about page">
+        <Article title="Credits" description="このサイトに何らかの形で貢献してくださった方々です。">
         </Article>
         <Suspense fallback={<div>Loading...</div>}>
           <Content />
@@ -20,4 +20,4 @@ class About extends React.Component {
   }
 }
 
-export default About;
+export default Credits;
