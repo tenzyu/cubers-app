@@ -1,8 +1,10 @@
-import React from "react";
+import React, { lazy, Suspense } from "react";
 import { ArticleLayout } from "layouts/articleLayout";
 
+import { importMDX } from 'mdx.macro';
 import { Article } from "components/article";
-import { Alg } from "components/algrithm";
+
+const Content = lazy(() => importMDX('../contents/tutorialTwo/tutorialTwo.mdx'))
 
 class TutorialTwo extends React.Component {
   render() {
@@ -13,8 +15,10 @@ class TutorialTwo extends React.Component {
           subtitle="初心者向け"
           description="ここには簡単な2x2の解き方をまとめます"
         >
-          <Alg memo="Yperm">F R U' R' U' R U R' F' R U R' U' R' F R F'</Alg>
         </Article>
+        <Suspense fallback={<div>Loading...</div>}>
+          <Content />
+        </Suspense>
       </ArticleLayout>
     );
   }
